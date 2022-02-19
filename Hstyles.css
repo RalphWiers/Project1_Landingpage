@@ -1,13 +1,84 @@
+html{
+    box-sizing: border-box;
+}
 
-h1 {
-    color:blue;
+* {
+    font-family:'Courier New', Courier, monospace ;
+    font-size: small;
+}
+
+p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+li {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+h1, h2 {
     font-size: large;
     font-weight: bold;
     text-align: center;
 }
 
-.BoldRed{
-    font-weight: bold;
+h1 {
+    color: blue;
+    border: 2px solid blue;
+    padding: 15px;
+    margin-left: 205px;
+    margin-right: 205px;
+    box-sizing: inherit;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.class1{
+    color: aquamarine ;
+}
+
+/* Provides markup to class 2 within class 1 */
+.class1 .class2{
+    color: blueviolet;
+}
+
+/* provides markup to specific combination of classes, span is inline element */
+.class1.class2 {
     color: red;
-    background-color: yellow;
+    display: inline;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img{
+    box-sizing: border-box;
+    height: 500px;
+    width: auto;
+}
+
+.imagetext {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-left: 730px;
+}
+
+.Yellow{
+    color: yellow;
+    background-color: black;
+}
+
+.Bold{
+    font-weight: bold;
 }
