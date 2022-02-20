@@ -1,4 +1,4 @@
-html{
+html {
     box-sizing: border-box;
 }
 
@@ -7,17 +7,14 @@ html{
     font-size: small;
 }
 
-p {
+body {
+    background-color: rgb(39, 34, 34);
+}
+
+.text {
     margin-left: 100px;
     margin-right: 100px;
 }
-
-li {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-
 h1, h2 {
     font-size: large;
     font-weight: bold;
@@ -30,7 +27,6 @@ h1 {
     padding: 15px;
     margin-left: 205px;
     margin-right: 205px;
-    box-sizing: inherit;
 }
 
 h2 {
@@ -59,7 +55,6 @@ margin-right: auto;
 }
 
 img{
-    box-sizing: border-box;
     height: 500px;
     width: auto;
 }
@@ -82,3 +77,108 @@ img{
 .Bold{
     font-weight: bold;
 }
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.position {
+ position: relative;
+ top: 40px; left: -40px;
+}
+
+
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+  }
+  
+  #two {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: blue;
+  }
+
+  .centerbl {
+      position: relative;
+      left: 500px;
+  }
+
+  .next {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center; 
+      /* where items sit on cross axis, default is stretch */
+      justify-content: space-around;
+      /* where items sit on cross axis */
+      height: 200px;
+      width: auto;
+      border-color: purple;
+      border-style: dashed;
+
+/* flex-wrap: auto wrapping, flex size of the width of the box */
+  }
+
+  .threeblock1 {
+      border-color: blue;
+      border-style: dashed;
+      text-align: center;
+      margin: 10px;
+      flex: 1 
+  }
+
+  .threeblock2 {
+    border-color: blue;
+    border-style: dashed;
+    text-align: center;
+    margin: 10px;
+    flex: 1 
+}
+
+.threeblock3 {
+    border-color: blue;
+    border-style: dashed;
+    text-align: center;
+    margin: 10px;
+    order: -2;
+    flex: 1
+    /* alligns on cross axis */
+
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+article {
+    border-style: dashed;
+    border-color: yellow;
+}
+
+.art {
+    flex: 1 200px;
+    margin: 10px;
+}
+
+.art3 {
+    flex: 3 200px;
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+}
+
+.art1, .art3 {
+    flex: 1 100px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
