@@ -152,33 +152,68 @@ ul {
 
 }
 
-section {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px;
-}
-
-article {
-    border-style: dashed;
-    border-color: yellow;
-}
-
-.art {
-    flex: 1 200px;
-    margin: 10px;
-}
-
-.art3 {
-    flex: 3 200px;
-    display: flex;
-    flex-flow: column;
-    margin: 10px;
-}
-
-.art1, .art3 {
-    flex: 1 100px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
+/*flex container has display: flex on it*/
+  .flex-container {
+      display: flex;
+      margin-top: 20px;
+      flex-direction: row;
+      /* puts main axis horizontal, row */
   }
+/*empty div has regular height of 0
+  /*
+  .flex-container div {
+      background-color: grey;
+      border: 4px solid blue;
+      height: 100px;
+      flex: 1;
+  }
+*/
+
+.one {
+    background-color: grey;
+    border: 4px solid blue;
+    height: 100px;
+    flex:  1;
+    flex-basis: 300;
+}
+
+.two {      
+    background-color: grey;
+    border: 4px solid blue;
+    height: 100px;
+    flex: 1;
+    display: flex;
+}
+
+.three{      
+    background-color: grey;
+    border: 4px solid blue;
+    height: 100px;
+    flex: 1;
+}
+
+.two div {
+    background-color: yellow;
+    border: 4px solid blue;
+    flex: 1;
+}
+
+.container {
+    margin-top: 50px;
+    height: 140px;
+    padding: 16px;
+    background: plum;
+    border: 4px solid indigo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item {
+    width: 60px;
+    height: 60px;
+    border: 4px solid darkslategray;
+    background-color: skyblue;
+    /*flex: 1;*/
+}
